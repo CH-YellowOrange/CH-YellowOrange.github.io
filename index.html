@@ -76,6 +76,22 @@ computing resources.</smalll><br/>
     </tr>
 </table>
 
+<button onclick="toggleNews()">Show More</button>
+
+<script>
+function toggleNews() {
+    var hiddenNews = document.querySelectorAll('.hidden-news');
+
+    hiddenNews.forEach(function(news) {
+        if (news.style.display === 'none' || news.style.display === '') {
+            news.style.display = 'list-item';
+        } else {
+            news.style.display = 'none';
+        }
+    });
+}
+</script>
+
 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 		                <tr>
               <td style="padding:16px;width:100%;vertical-align:middle">
