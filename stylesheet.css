@@ -686,3 +686,11 @@ height: 100%;
     transform: translateY(-3px) scale(1.01);
     box-shadow: 0 12px 30px rgba(0,0,0,0.12);
 }
+
+.social-links-bar {
+  display: flex;
+  justify-content: center;  /* 水平居中 */
+  align-items: center;      /* 垂直居中（可选） */
+  gap: 12px;
+}
+
