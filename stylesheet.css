@@ -208,6 +208,8 @@ h2.section-title {
 .social-links-bar {
   margin-top: 25px;
   display: flex;
+  justify-content: center;  /* 水平居中 */
+  align-items: center;      /* 垂直居中（可选） */
   flex-wrap: wrap;
   gap: 10px;
 }
