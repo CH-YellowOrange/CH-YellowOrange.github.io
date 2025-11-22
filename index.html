@@ -320,7 +320,21 @@
     </div>
 
 
-
+  <!-- ================= 脚本 ================= -->
+  <script>
+    function toggleNews() {
+      var hiddenNews = document.getElementById('more-news');
+      var btn = document.getElementById('news-toggle-btn');
+      
+      if (hiddenNews.style.display === 'block') {
+        hiddenNews.style.display = 'none';
+        btn.textContent = 'Show More';
+      } else {
+        hiddenNews.style.display = 'block';
+        btn.textContent = 'Show Less';
+      }
+    }
+  </script>
           
 
 
