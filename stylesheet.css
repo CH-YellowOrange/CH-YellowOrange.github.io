@@ -169,6 +169,8 @@ h2.section-title {
   font-size: 1.05rem;
   margin-bottom: 15px;
   color: #444;
+  text-align: justify;
+  hyphens: auto;
 }
 
 .profile-photo-box {
@@ -272,6 +274,8 @@ h2.section-title {
 .vision-intro {
   margin-bottom: 20px;
   color: #444;
+  text-align: justify;
+  hyphens: auto;
 }
 .vision-cards {
   display: grid;
@@ -300,6 +304,8 @@ h2.section-title {
   font-size: 0.9em;
   color: #555;
   line-height: 1.5;
+  text-align: justify;
+  hyphens: auto;
 }
 
 /* 地图 */
@@ -356,10 +362,6 @@ h2.section-title {
 }
 
 .hidden-news {
-  display: none;
-}
-
-.hidden-work {
   display: none;
 }
 
