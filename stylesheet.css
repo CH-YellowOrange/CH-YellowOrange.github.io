@@ -359,6 +359,10 @@ h2.section-title {
   display: none;
 }
 
+.hidden-work {
+  display: none;
+}
+
 .btn-show-more {
   background: #fff;
   border: 1px solid #ccc;
