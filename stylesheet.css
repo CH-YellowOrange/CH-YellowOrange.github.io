@@ -169,8 +169,6 @@ h2.section-title {
   font-size: 1.05rem;
   margin-bottom: 15px;
   color: #444;
-  text-align: justify;
-  hyphens: auto;
 }
 
 .profile-photo-box {
@@ -274,8 +272,6 @@ h2.section-title {
 .vision-intro {
   margin-bottom: 20px;
   color: #444;
-  text-align: justify;
-  hyphens: auto;
 }
 .vision-cards {
   display: grid;
@@ -304,8 +300,6 @@ h2.section-title {
   font-size: 0.9em;
   color: #555;
   line-height: 1.5;
-  text-align: justify;
-  hyphens: auto;
 }
 
 /* 地图 */
@@ -411,6 +405,36 @@ h2.section-title {
   max-height: 60px;
   object-fit: contain;
   display: block;
+}
+
+/* 本科期间的子经历（缩进 + 竖线表示从属） */
+.sub-experience {
+  margin-top: 18px;
+  margin-left: 4px;
+  padding-left: 22px;
+  border-left: 2px solid #e0e0e0;
+}
+
+.sub-experience .sub-item {
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.sub-experience .sub-item:last-child {
+  margin-bottom: 0;
+}
+
+.sub-experience .sub-logo {
+  width: 60px;
+  min-width: 60px;
+}
+
+.sub-experience .sub-logo img {
+  max-height: 40px;
+}
+
+.sub-experience .experience-details strong {
+  font-size: 0.98em;
 }
 
 .experience-details {
