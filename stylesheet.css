@@ -419,9 +419,17 @@ h2.section-title {
 }
 
 /* 领英式：同一学校下的缩进子经历（交换、访问等） */
+.edu-with-sub {
+  margin-bottom: 30px;
+}
+
+.edu-with-sub > .experience-item {
+  margin-bottom: 0;
+}
+
 .sub-experience {
-  margin-top: 18px;
-  margin-left: 2px;
+  margin-top: 16px;
+  margin-left: 125px;   /* logo宽100px + gap25px，对齐正文列 */
   padding-left: 24px;
   border-left: 2px solid #e2e4e8;
 }
