@@ -431,7 +431,7 @@ h2.section-title {
   margin-top: 16px;
   margin-left: 125px;   /* logo宽100px + gap25px，对齐正文列 */
   padding-left: 24px;
-  border-left: 2px solid #e2e4e8;
+  border-left: 2px solid #000000;
 }
 
 .sub-experience .sub-item {
