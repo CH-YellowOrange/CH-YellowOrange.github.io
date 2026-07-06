@@ -284,6 +284,9 @@ By the way, I also conduct research in the following areas:
     </div>
 
 
+    <!-- 隐藏的经历：从第 4 条开始折叠 -->
+    <div class="hidden-work" id="more-work">
+
     <div class="experience-item">
       <div class="logo-box"><img src='photo/ZenWeave.png' alt="NASA Logo"></div>
       <div class="experience-details">
@@ -379,8 +382,9 @@ By the way, I also conduct research in the following areas:
       </div>
     </div>
 
+    </div><!-- /#more-work -->
 
- 
+    <button class="btn-show-more" onclick="toggleWork()" id="work-toggle-btn">Show More</button>
 
 
 
@@ -514,6 +518,19 @@ By the way, I also conduct research in the following areas:
         btn.textContent = 'Show More';
       } else {
         hiddenNews.style.display = 'block';
+        btn.textContent = 'Show Less';
+      }
+    }
+
+    function toggleWork() {
+      var hiddenWork = document.getElementById('more-work');
+      var btn = document.getElementById('work-toggle-btn');
+
+      if (hiddenWork.style.display === 'block') {
+        hiddenWork.style.display = 'none';
+        btn.textContent = 'Show More';
+      } else {
+        hiddenWork.style.display = 'block';
         btn.textContent = 'Show Less';
       }
     }
