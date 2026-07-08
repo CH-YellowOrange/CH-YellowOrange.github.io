@@ -71,8 +71,7 @@
           </div>
         </div>
 
-        <!-- 头像区：默认 photo-2(墨镜照)；photo-1 为悬停/激活时的底图。
-             NASA 徽章叠在左下角，点击照片 5 次激活显示，可跳 NASA 官网。 -->
+        <!-- 头像区：墨镜照 -->
         <div class="profile-photo-box">
           <div class="avatar-frame" id="avatar-frame">
             <img src="Photo/photo-2.jpg" alt="Jinfa Huang" class="avatar-img avatar-base" />
@@ -440,7 +439,7 @@
       </button>
 
       <!-- ============================================================ -->
-      <!-- 工作经历 (Work) —— UTSW/SMU 多角色合并；NASA 为隐藏彩蛋 -->
+      <!-- 工作经历 (Work) —— UTSW/SMU 多角色合并 -->
       <!-- ============================================================ -->
       <h2 class="section-title">Work</h2>
 
@@ -589,9 +588,7 @@
           </div>
         </div>
 
-        <!-- 隐藏经历(NASA)：默认 display:none，无痕迹。
-             在上方 SMU 子条目的 "Research Assistant" 文字上连点 5 次（且鼠标不离开）才显示，
-             鼠标一离开触发点即彻底消失。详见页面底部脚本。 -->
+
         <div class="experience-item nasa-secret" id="nasa-secret">
           <div class="logo-box"><img src="Work/NASA.png" alt="NASA" /></div>
           <div class="experience-details">
@@ -893,16 +890,15 @@
         }
       }
 
-      // NASA 彩蛋：在照片上点击 5 次激活（切到 photo-1 + 显示徽章），
-      // 保持到鼠标移开；移开后复原并清零，需重新点 5 次。
+
       (function () {
         var frame = document.getElementById("avatar-frame");
         if (!frame) return;
         var clicks = 0;
 
         frame.addEventListener("click", function (e) {
-          if (frame.classList.contains("activated")) return; // 已激活则不再计数
-          if (e.target.closest(".nasa-badge-link")) return; // 保险：忽略徽章链接
+          if (frame.classList.contains("activated")) return; 
+          if (e.target.closest(".nasa-badge-link")) return; 
           clicks++;
           if (clicks >= 5) frame.classList.add("activated");
         });
@@ -913,8 +909,7 @@
         });
       })();
 
-      // 隐藏经历（NASA）：在触发点点击 5 次显示；
-      // 鼠标一离开触发点立即彻底消失并清零。
+
       (function () {
         var trigger = document.getElementById("nasa-trigger");
         var secret = document.getElementById("nasa-secret");
